@@ -2,7 +2,7 @@
   "name": "ninecells/assets-admin-lte",
   "license": "MIT",
   "require": {
-    "php": ">=5.5.9"
+    "ninecells/assets-twbs3": "*"
   },
   "autoload": {
     "psr-4": {
