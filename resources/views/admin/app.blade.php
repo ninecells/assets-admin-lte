@@ -9,6 +9,7 @@
         <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
         <link href="{{ asset('/vendor/ninecells/assets-admin-lte/css/AdminLTE.min.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('/vendor/ninecells/assets-admin-lte/css/skins/skin-blue.min.css') }}" rel="stylesheet" type="text/css" />
+        @yield('head')
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -30,5 +31,6 @@
     <script src="{{ asset ('/vendor/ninecells/assets-admin-lte/plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>
     <script src="{{ asset ('/vendor/ninecells/assets-twbs3/bootstrap-3.3.6-dist/js/bootstrap.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset ('/vendor/ninecells/assets-admin-lte/js/app.min.js') }}" type="text/javascript"></script>
+    @yield('script')
     </body>
 </html>
