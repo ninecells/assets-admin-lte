@@ -1,3 +1,5 @@
+@inject('packages', 'NineCells\Admin\PackageList')
+
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
@@ -6,8 +8,10 @@
             <small>@yield('page-description')</small>
         </h1>
         <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-            <li class="active">Here</li>
+            <li><a href="/admin"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+            @if ($packages->getCurrentKey())
+            <li class="active">{{ $packages->getCurrentName() }}</li>
+            @endif
         </ol>
     </section>
 
